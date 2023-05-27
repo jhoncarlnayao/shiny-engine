@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="styleport" href="styleport.css">
+
+</head>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+
+<style>
+
+   
+:root {
+    --animate-duration:4s;
+}
+.my-element{
+    --animate-duration: 4s;
+}
+.card {
+  width: 300px;
+  height: 190px;
+  top:43%;
+  padding: 1rem;
+  background: rgba(198, 198, 198, 0.34);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+  border-left: 2px  rgba(255, 255, 255, 0.545) outset;
+  box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+  transform: skewX(10deg);
+  transition: .4s;
+  overflow: hidden;
+  color: white;
+
+}
+.card:hover {
+  height: 254px;
+  transform: skew(0deg);
+}
+
+.align {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-self: flex-start;
+}
+
+.red {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff605c;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+  position: absolute;
+  top: -64px;
+  left: 5px;
+}
+
+.yellow {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffbd44;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+   position: absolute;
+   top:-64px;
+   left: 3cqh;
+}
+
+.green {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00ca4e;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+   position: absolute;
+   top:-64px;
+   left: 5cqh;
+}
+
+.card h1 {
+  text-align: center;
+  margin: 1.3rem;
+  color: rgb(218, 244, 237);
+  text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+}
+   ul.navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 10;
+      overflow: hidden;
+      background-color: darkviolet;
+    }
+    ul.navbar li {
+      float: left;
+    }
+
+    ul.navbar li a {
+      display: block;
+      padding: 25px;
+      text-decoration: none;
+      color: black;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+    ul.navbar li a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: black; /* Change the color as desired */
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    ul.navbar li a:hover {
+      transform: translateY(-5px);
+    }
+
+    ul.navbar li a:hover::after {
+      transform: scaleX(1);
+    }
+    nav {
+      font-family: arial bold;
+      font-size: 25px;
+      display: block;
+      text-decoration: none;
+      background-color: darkgray;
+
+      color: black;
+    }
+
+    ul {
+      font-family: arial bold;
+    }
+    h1 {
+    position:absolute;
+    top: 24%;
+    left: 4%;   
+    font-family: sans;
+    color:white;
+    }
+    h2 {
+        position: absolute;
+        top: 31%;
+        left: 4%;
+        font-family: sans;
+        font-size:small;
+         color:white;
+    }
+    div{
+        position: absolute;
+        top:30%;
+        left: 4%;
+    font-family: sans;
+    font-size: large;
+    }
+    h3{
+      position: relative;
+      font-size: 180%;
+      font-weight: 1000pc;
+      letter-spacing: 3px;
+      color: #0e3742;
+      text-transform: uppercase;
+      width: 100%;
+      -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    line-height: 0.70em;  
+     outline: none;
+     animation: animate 4s linear infinite;  
+     position:fixed;
+     top: 32%;
+  }
+  @keyframes animate {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+      color: #0e3742;
+      text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+      color: #ffff;
+      text-shadow: 0 0 10px #03bcf4,
+      0 0 20px #03bcf4,
+      0 0 40px #03bcf4,
+      0 0 80px #03bcf4,
+      0 0 160px #03bcf4
+    }
+  }
+/*                                    */
+
+img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: fixed;
+  top: 20%;
+  left: 65%;
+  transition: transform 0.4s ease-in-out; 
+}
+img:hover{
+  transform:scale(1.2);
+}
+
+/*                                        */
+.social-media {
+  display: flex;
+ position: absolute;
+ top: 68%;
+ left: 68%;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  background-color: #007bff;
+}
+body{
+  background-image: url(layered-steps-haikei.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+
+
+
+
+
+
+</style>
+
+<body>
+   <ul class="navbar">
+      <li>
+        <a href="#Home"><b>Home</b></a>
+      </li>
+      <li>
+        <a href="#ABOUT"><b>About</b></a>
+      </li>
+      <li>
+        <a href="#CONTACT"><b>Contact</b></a>
+      </li>
+     
+    </ul>
+    
+
+    <h1>   JHON CARL NAYAO  </h1>
+    <h2> Bachelor of Science in Information Technology</h2>
+   
+<div class="text animate__animated animate__flash animate__infinite	infinite ">
+    <h3 contenteditable="true">CURRENTLY A STUDENT</h3>
+</div>
+    <div class="card">
+      <div class="align">
+        <span class="red"></span>
+        <span class="yellow"></span>
+        <span class="green"></span>
+      </div>
+    
+     
+      <p>
+        I am a student at the University of Mindanao, pursuing a Bachelor of Science in Information Technology. Throughout my
+        academic journey, I have successfully completed several noteworthy projects, including a GUI Milk Tea Shop, a Java-based
+        calculator, and a calculator programmed in assembly language.
+      </p>
+    </div>
+</div>
+
+<div2 class="box">
+  <img src="img14.jpg" alt="darkgray">
+</div2>
+<div3 class="social-media">
+  <a href="https://web.facebook.com/jhoncarl.nayao" class="social-icon">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://twitter.com/jhoncarlnayao/" class="social-icon">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://www.instagram.com/nayaojhoncarl/" class="social-icon">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.tiktok.com/@jaubajauwbwkanbxisks" class="social-icon">
+    <i class="fab fa-tiktok"></i>
+  </a>
+</div3>
+
+
+  </body>
+
+</html>
